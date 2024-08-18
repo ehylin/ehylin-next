@@ -1,0 +1,17 @@
+{
+  "HomePage": {
+    "title": "Hello Word!",
+    "description": "Welcome to the best site for amazing content.",
+    "ogTitle": "Welcome to My Site",
+    "ogDescription": "Discover amazing content on our site.",
+    "ogImage": "/path/to/image.jpg"
+  },
+  "Header": {
+    "text": "Text header in english",
+    "about": "About",
+    "blog": "Blog"
+  },
+  "AboutPage": {
+    "title": "About"
+  }
+}

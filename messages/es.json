@@ -1,0 +1,17 @@
+{
+  "HomePage": {
+    "title": "Hola mundo",
+    "description": "Bienvenido al mejor sitio para contenido asombroso.",
+    "ogTitle": "Bienvenido a Mi Sitio",
+    "ogDescription": "Descubre contenido increíble en nuestro sitio.",
+    "ogImage": "/path/to/image.jpg"
+  },
+  "Header": {
+    "text": "Texto header en español",
+    "about": "Acerca de mi",
+    "blog": "Blog"
+  },
+  "AboutPage": {
+    "title": "Acerca de mi"
+  }
+}
