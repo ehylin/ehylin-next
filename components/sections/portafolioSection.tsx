@@ -9,6 +9,9 @@ const PortfolioSection: React.FC = () => {
         <div className="bg-gray-200 h-48">Proyecto 1</div>
         <div className="bg-gray-200 h-48">Proyecto 2</div>
         <div className="bg-gray-200 h-48">Proyecto 3</div>
+        <div className="bg-gray-200 h-48">Proyecto 4</div>
+        <div className="bg-gray-200 h-48">Proyecto 5</div>
+        <div className="bg-gray-200 h-48">Proyecto 6</div>
         {/* Más proyectos */}
       </div>
     </section>

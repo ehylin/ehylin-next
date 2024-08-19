@@ -8,6 +8,7 @@ import { ThemeSwitcher } from "@/components";
 import { LocaleProvider } from "@/context/localeContext";
 import Footer from "@/components/ui/footer";
 
+
 export const metadata: Metadata = {
   title: "Ehylin Next.js con App Router..",
   description: "Ehylin Next.js con App Router..",
@@ -26,22 +27,22 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="theme-wrapper">
-      <body>
-        <div>
-          <div className="flex flex-col min-h-[calc(100vh-100px)] overflow-clip rounded-[25px] m-[50px]">
+    <body>
             <ThemeProvider>
               <LocaleProvider>
                 <NextIntlClientProvider messages={messages}>
                   <ThemeSwitcher />
-                  <Header locale={locale} />
-                  <main>{children}</main>
-                  <Footer /> 
+                 
+                    <div className="flex flex-col lg:min-h-[calc(100vh-100px)] lg:overflow-clip lg:rounded-[25px] lg:m-[50px]">
+                     <Header locale={locale} />
+                      <main>{children}</main>
+                     <Footer /> 
+                    </div>
+              
                 </NextIntlClientProvider>
               </LocaleProvider>
             </ThemeProvider>
-          </div>
-        </div>
-      </body>
+            </body>
     </html>
   );
 }

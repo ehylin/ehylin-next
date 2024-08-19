@@ -7,16 +7,13 @@ import {
 } from "@/components";
 import { useTheme } from "@/context/themeContext";
 import { useTranslations } from "next-intl";
-import Head from "next/head";
+
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
   const { theme } = useTheme();
   return (
     <>
-      <Head>
-        <title>{t("title")}</title>
-      </Head>
       <div
         className={`py-4 px-8 ${
           theme === "light"

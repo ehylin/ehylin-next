@@ -30,8 +30,8 @@ export default function Header({ locale }: HeaderProps) {
         {/* Enlaces principales en el centro */}
         <div className="flex space-x-4">
           <Link href="/">Home</Link>
-          <Link href={`/${locale}/blog`}>{t("blog")}</Link>
           <Link href={`/${locale}/about`}>{t("about")}</Link>
+          <Link href={`/${locale}/blog`}>{t("blog")}</Link>
           <Link href="/">Contact</Link>
         </div>
         {/* Enlace para el menú lateral a la derecha */}
