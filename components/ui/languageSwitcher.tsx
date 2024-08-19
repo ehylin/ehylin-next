@@ -7,16 +7,16 @@ import { useEffect, useState } from "react";
 const LanguageSwitcher = () => {
   const { locale, setLocale } = useLocale();
   const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false);
+  //const [isLoading, setIsLoading] = useState(false);
 
   const handleLanguageChange = async (newLocale: string) => {
-    setIsLoading(true);
+    //setIsLoading(true);
     localStorage.setItem("locale", newLocale);
     setLocale(newLocale);
     try {
       await router.push(`/${newLocale}`);
     } finally {
-      setIsLoading(false);
+      //setIsLoading(false);
     }
   };
 
@@ -32,13 +32,14 @@ const LanguageSwitcher = () => {
           onClick={() => handleLanguageChange("en")}
           className={`p-2 ${locale === "en" ? "font-bold" : ""}`}
         >
-          English
+          EN  
         </button>
+        <span>/</span>
         <button
           onClick={() => handleLanguageChange("es")}
           className={`p-2 ${locale === "es" ? "font-bold" : ""}`}
         >
-          Español
+          ES
         </button>
       </div>
     </div>

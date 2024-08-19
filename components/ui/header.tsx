@@ -13,14 +13,14 @@ export default function Header({ locale }: HeaderProps) {
   const { theme } = useTheme();
   return (
     <header
-      className={`p-4 ${
+      className={`py-4 px-8 border border-b ${
         theme === "light"
           ? "bg-background-light text-text-light"
           : "bg-background-dark text-text-dark"
       }`}
     >
       <nav className="flex justify-between items-center">
-        {t("text")}
+
         {/* Redes sociales a la izquierda */}
         <div className="flex space-x-4">
           <Link href="/">Facebook</Link>

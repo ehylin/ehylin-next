@@ -6,6 +6,7 @@ import Header from "@/components/ui/header";
 import { ThemeProvider } from "@/context/themeContext";
 import { ThemeSwitcher } from "@/components";
 import { LocaleProvider } from "@/context/localeContext";
+import Footer from "@/components/ui/footer";
 
 export const metadata: Metadata = {
   title: "Ehylin Next.js con App Router..",
@@ -31,9 +32,10 @@ export default async function LocaleLayout({
             <ThemeProvider>
               <LocaleProvider>
                 <NextIntlClientProvider messages={messages}>
-                  <Header locale={locale} />
                   <ThemeSwitcher />
+                  <Header locale={locale} />
                   <main>{children}</main>
+                  <Footer /> 
                 </NextIntlClientProvider>
               </LocaleProvider>
             </ThemeProvider>

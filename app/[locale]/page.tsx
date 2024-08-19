@@ -18,7 +18,7 @@ export default function HomePage() {
         <title>{t("title")}</title>
       </Head>
       <div
-        className={`p-4 ${
+        className={`py-4 px-8 ${
           theme === "light"
             ? "bg-background-light text-text-light"
             : "bg-background-dark text-text-dark"
